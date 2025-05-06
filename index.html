@@ -39,40 +39,58 @@
     <img src="images/1.png" alt="Magic Pandas" class="rounded-xl shadow-xl mb-6"/>
   </div>
 </section>
-
-<section class="py-10 px-6">
+<section id="collections" class="py-10 px-6">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl mb-6 highlight">🎨 Галерея работ</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div><img src="images/1.png" alt="Magic Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Magic Panda</p></div>
-      <div><img src="images/2.png" alt="Panda & Sushi" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Panda & Sushi</p></div>
-      <div><img src="images/3.png" alt="Sweet Dreams" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Sweet Dreams</p></div>
-      <div><img src="images/4.png" alt="Happy Birthday!" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Happy Birthday!</p></div>
-      <div><img src="images/5.png" alt="Wow Moment!" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Wow Moment!</p></div>
-      <div><img src="images/6.png" alt="Coffee Break" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Coffee Break</p></div>
-      <div><img src="images/7.png" alt="Pizza Time!" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Pizza Time!</p></div>
-      <div><img src="images/8.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Love Panda</p></div>
-      <div><img src="images/9.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Cut Panda</p></div>
-      <div><img src="images/10.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Happy Panda</p></div>
-      <div><img src="images/11.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Game Time</p></div>
-      <div><img src="images/12.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Style Panda</p></div>
-      <div><img src="images/13.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Misical Panda</p></div>
-      <div><img src="images/14.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Magic Panda</p></div>
-      <div><img src="images/15.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Reading Panda</p></div>
-      <div><img src="images/16.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Freelancer Panda</p></div>
-      <div><img src="images/17.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Art Panda</p></div>
-      <div><img src="images/18.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Fantastic Panda</p></div>
-      <div><img src="images/19.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Dragon & Panda</p></div>
-      <div><img src="images/20.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Photographer</p></div>
-      <div><img src="images/21.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Traveling Panda</p></div>
-      <div><img src="images/22.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">A Panda with a gift</p></div>
-      <div><img src="images/23.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Panda in meditation</p></div>
-      <div><img src="images/24.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Panda with a smartphone</p></div>
-      <div><img src="images/25.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Panda gardener</p></div>
-      <div><img src="images/26.png" alt="New Panda" class="rounded-lg gallery-img"/><p class="text-center mt-2 text-gray-300 text-sm">Love Panda</p></div>
+    <h2 class="text-2xl mb-6 highlight">🎨 Мои коллекции</h2>
+
+    <!-- Коллекция 1: Magic Panda -->
+    <div class="mb-10">
+      <div onclick="toggleCollection('magic')" class="cursor-pointer group">
+        <img src="images/1.png" alt="Magic Panda" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
+        <h3 class="text-xl mt-3">Magic Panda</h3>
+        <p class="text-gray-400 text-sm">26 нейропанд без подписей</p>
+      </div>
+      <div id="magic" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
+        <script>
+          for (let i = 2; i <= 26; i++) {
+            document.write(`<img src="images/${i}.png" alt="Magic Panda ${i}" class="rounded-lg">`);
+          }
+        </script>
+      </div>
     </div>
+
+    <!-- Коллекция 2: Panda’s Summer Vacation -->
+    <div class="mb-10">
+      <div onclick="toggleCollection('summer')" class="cursor-pointer group">
+        <img src="images/panda's summer vacation.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
+        <h3 class="text-xl mt-3">Panda’s Summer Vacation</h3>
+        <p class="text-gray-400 text-sm">25 милых нейропанд на отдыхе</p>
+      </div>
+      <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
+        <script>
+          for (let i = 1; i <= 25; i++) {
+            document.write(`<img src="images/Panda (${i}).png" alt="Vacation Panda ${i}" class="rounded-lg">`);
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- Заготовка под следующую коллекцию -->
+    <div class="mb-10 opacity-50 pointer-events-none">
+      <div class="rounded-xl bg-gray-800 w-full h-64 flex items-center justify-center text-gray-400">
+        Следующая коллекция скоро появится...
+      </div>
+    </div>
+
   </div>
 </section>
+
+<script>
+  function toggleCollection(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+</script>
 
 <section class="max-w-4xl mx-auto px-6 py-10">
   <h2 class="text-2xl mb-4 highlight">✨ Что я делаю</h2>
