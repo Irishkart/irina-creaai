@@ -19,11 +19,13 @@
 </head>
 <body class="bg-black text-white">
 
+<!-- Header -->
 <header class="p-6 text-center">
   <h1 class="text-4xl md:text-5xl font-bold mb-2">Irina<span class="highlight">CreaAi</span></h1>
   <p class="text-lg md:text-xl text-gray-300">Создаю визуальные миры через нейроискусство</p>
 </header>
 
+<!-- About -->
 <section class="max-w-3xl mx-auto px-6 py-10">
   <h2 class="text-2xl mb-4 highlight">Обо мне</h2>
   <p class="text-gray-300 leading-relaxed">
@@ -32,6 +34,7 @@
   </p>
 </section>
 
+<!-- Product -->
 <section class="bg-gray-900 py-10 px-6">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">💫 Magic Pandas — первый цифровой набор</h2>
@@ -42,40 +45,29 @@
   </div>
 </section>
 
+<!-- Collections -->
 <section id="collections" class="py-10 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-2xl mb-6 highlight">🎨 Мои коллекции</h2>
 
-    <!-- Magic Panda -->
+    <!-- Коллекция 1 -->
     <div class="mb-10">
       <div onclick="toggleCollection('magic')" class="cursor-pointer group">
         <img src="images/magic1.png" alt="Magic Panda" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
         <h3 class="text-xl mt-3">Magic Panda</h3>
         <p class="text-gray-400 text-sm">25 нейропанд</p>
       </div>
-      <div id="magic" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
-        <script>
-          for (let i = 2; i <= 26; i++) {
-            document.write(`<img src="images/magic${i}.png" alt="Magic Panda ${i}" class="rounded-lg gallery-img">`);
-          }
-        </script>
-      </div>
+      <div id="magic" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden"></div>
     </div>
 
-    <!-- Summer Vacation -->
+    <!-- Коллекция 2 -->
     <div class="mb-10">
       <div onclick="toggleCollection('summer')" class="cursor-pointer group">
         <img src="images/pandas.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
         <h3 class="text-xl mt-3">Panda’s Summer Vacation</h3>
         <p class="text-gray-400 text-sm">25 милых нейропанд на отдыхе</p>
       </div>
-      <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
-        <script>
-          for (let i = 1; i <= 25; i++) {
-            document.write(`<img src="images/panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg gallery-img">`);
-          }
-        </script>
-      </div>
+      <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden"></div>
     </div>
 
     <!-- Заготовка -->
@@ -87,13 +79,33 @@
   </div>
 </section>
 
+<!-- Script для отображения изображений -->
 <script>
   function toggleCollection(id) {
     const el = document.getElementById(id);
     el.classList.toggle('hidden');
   }
+
+  const magicContainer = document.getElementById('magic');
+  for (let i = 2; i <= 26; i++) {
+    const img = document.createElement('img');
+    img.src = `images/magic${i}.png`;
+    img.alt = `Magic Panda ${i}`;
+    img.className = 'rounded-lg gallery-img';
+    magicContainer.appendChild(img);
+  }
+
+  const summerContainer = document.getElementById('summer');
+  for (let i = 1; i <= 25; i++) {
+    const img = document.createElement('img');
+    img.src = `images/panda${i}.png`;
+    img.alt = `Vacation Panda ${i}`;
+    img.className = 'rounded-lg gallery-img';
+    summerContainer.appendChild(img);
+  }
 </script>
 
+<!-- Редкие панды -->
 <section class="py-10 px-6 bg-gray-800">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">🔎 Редкие панды</h2>
@@ -111,6 +123,7 @@
   </div>
 </section>
 
+<!-- Services -->
 <section class="max-w-4xl mx-auto px-6 py-10">
   <h2 class="text-2xl mb-4 highlight">✨ Что я делаю</h2>
   <ul class="list-disc list-inside text-gray-300 space-y-2">
@@ -121,6 +134,7 @@
   </ul>
 </section>
 
+<!-- Reviews -->
 <section class="bg-gray-900 py-10 px-6">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">Отзывы</h2>
@@ -130,6 +144,7 @@
   </div>
 </section>
 
+<!-- Contacts -->
 <section class="py-10 px-6 text-center">
   <h2 class="text-2xl mb-4 highlight">📬 Контакты</h2>
   <p class="text-gray-300 mb-4">Связаться со мной можно через соцсети или по email:</p>
@@ -141,6 +156,7 @@
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="bg-black text-center py-6 text-gray-500 text-sm">
   © 2025 by IrinaCreaAi. Все права защищены.
 </footer>
