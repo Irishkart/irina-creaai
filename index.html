@@ -36,46 +36,47 @@
     <p class="text-gray-300 mb-6">
       25 уникальных визуалов с микропандами в формате PNG на прозрачном фоне. Идеально для оформления соцсетей, сторис и проектов!
     </p>
-    <img src="images/1.png" alt="Magic Pandas" class="rounded-xl shadow-xl mb-6"/>
+    <img src="images/Magic%20Pandas/magic1.png" alt="Magic Pandas" class="rounded-xl shadow-xl mb-6"/>
   </div>
 </section>
+
 <section id="collections" class="py-10 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-2xl mb-6 highlight">🎨 Мои коллекции</h2>
 
-    <!-- Коллекция 1: Magic Panda -->
+    <!-- Коллекция 1 -->
     <div class="mb-10">
       <div onclick="toggleCollection('magic')" class="cursor-pointer group">
         <img src="images/Magic%20Pandas/magic1.png" alt="Magic Panda" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
         <h3 class="text-xl mt-3">Magic Panda</h3>
         <p class="text-gray-400 text-sm">26 нейропанд без подписей</p>
       </div>
-    <div id="magic" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
-  <script>
-    for (let i = 1; i <= 26; i++) {
-      document.write(`<img src="images/Magic%20Pandas/magic${i}.png" alt="Magic Panda ${i}" class="rounded-lg">`);
-    }
-  </script>
-</div>
+      <div id="magic" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
+        <script>
+          for (let i = 1; i <= 26; i++) {
+            document.write(`<img src="images/Magic%20Pandas/magic${i}.png" alt="Magic Panda ${i}" class="rounded-lg gallery-img">`);
+          }
+        </script>
+      </div>
     </div>
 
-    <!-- Коллекция 2: Panda’s Summer Vacation -->
+    <!-- Коллекция 2 -->
     <div class="mb-10">
       <div onclick="toggleCollection('summer')" class="cursor-pointer group">
-       <img src="images/Panda%20Summer%20Vacation/Panda1.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
+        <img src="images/Panda%20Summer%20Vacation/Panda1.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
         <h3 class="text-xl mt-3">Panda’s Summer Vacation</h3>
         <p class="text-gray-400 text-sm">25 милых нейропанд на отдыхе</p>
       </div>
       <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
-  <script>
-    for (let i = 1; i <= 25; i++) {
-      document.write(`<img src="images/Panda%20Summer%20Vacation/Panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg">`);
-    }
-  </script>
-</div>
+        <script>
+          for (let i = 1; i <= 25; i++) {
+            document.write(`<img src="images/Panda%20Summer%20Vacation/Panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg gallery-img">`);
+          }
+        </script>
+      </div>
     </div>
 
-    <!-- Заготовка под следующую коллекцию -->
+    <!-- Следующая коллекция -->
     <div class="mb-10 opacity-50 pointer-events-none">
       <div class="rounded-xl bg-gray-800 w-full h-64 flex items-center justify-center text-gray-400">
         Следующая коллекция скоро появится...
