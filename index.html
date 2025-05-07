@@ -19,13 +19,11 @@
 </head>
 <body class="bg-black text-white">
 
-<!-- Header -->
 <header class="p-6 text-center">
   <h1 class="text-4xl md:text-5xl font-bold mb-2">Irina<span class="highlight">CreaAi</span></h1>
   <p class="text-lg md:text-xl text-gray-300">Создаю визуальные миры через нейроискусство</p>
 </header>
 
-<!-- About -->
 <section class="max-w-3xl mx-auto px-6 py-10">
   <h2 class="text-2xl mb-4 highlight">Обо мне</h2>
   <p class="text-gray-300 leading-relaxed">
@@ -34,7 +32,6 @@
   </p>
 </section>
 
-<!-- Product -->
 <section class="bg-gray-900 py-10 px-6">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">💫 Magic Pandas — первый цифровой набор</h2>
@@ -45,12 +42,11 @@
   </div>
 </section>
 
-<!-- Collections -->
 <section id="collections" class="py-10 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-2xl mb-6 highlight">🎨 Мои коллекции</h2>
 
-    <!-- Коллекция 1 -->
+    <!-- Magic Panda -->
     <div class="mb-10">
       <div onclick="toggleCollection('magic')" class="cursor-pointer group">
         <img src="images/magic1.png" alt="Magic Panda" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
@@ -66,7 +62,7 @@
       </div>
     </div>
 
-    <!-- Коллекция 2 -->
+    <!-- Summer Vacation -->
     <div class="mb-10">
       <div onclick="toggleCollection('summer')" class="cursor-pointer group">
         <img src="images/pandas.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
@@ -76,7 +72,7 @@
       <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
         <script>
           for (let i = 1; i <= 25; i++) {
-            document.write(`<img src="images/Panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg gallery-img">`);
+            document.write(`<img src="images/panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg gallery-img">`);
           }
         </script>
       </div>
@@ -98,7 +94,6 @@
   }
 </script>
 
-<!-- Редкие панды -->
 <section class="py-10 px-6 bg-gray-800">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">🔎 Редкие панды</h2>
@@ -107,31 +102,15 @@
       Их редко можно увидеть, и в этом — их магия ✨
     </p>
     <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-      <div>
-        <img src="images/bonus1.png" alt="Волшебница" class="rounded-lg shadow-lg gallery-img">
-        <p class="text-center text-sm mt-2 text-gray-400">🧚 Волшебница</p>
-      </div>
-      <div>
-        <img src="images/bonus2.png" alt="Космопанда" class="rounded-lg shadow-lg gallery-img">
-        <p class="text-center text-sm mt-2 text-gray-400">🚀 Космопанда</p>
-      </div>
-      <div>
-        <img src="images/bonus3.png" alt="DJ Панда" class="rounded-lg shadow-lg gallery-img">
-        <p class="text-center text-sm mt-2 text-gray-400">🎧 DJ Панда</p>
-      </div>
-      <div>
-        <img src="images/bonus4.png" alt="Панда с донатом" class="rounded-lg shadow-lg gallery-img">
-        <p class="text-center text-sm mt-2 text-gray-400">🍩 Панда с донатом</p>
-      </div>
-      <div>
-        <img src="images/bonus5.png" alt="Панда в ванной" class="rounded-lg shadow-lg gallery-img">
-        <p class="text-center text-sm mt-2 text-gray-400">🛁 Панда в ванной</p>
-      </div>
+      <div><img src="images/bonus1.png" alt="Волшебница" class="rounded-lg shadow-lg gallery-img"><p class="text-center text-sm mt-2 text-gray-400">🧚 Волшебница</p></div>
+      <div><img src="images/bonus2.png" alt="Космопанда" class="rounded-lg shadow-lg gallery-img"><p class="text-center text-sm mt-2 text-gray-400">🚀 Космопанда</p></div>
+      <div><img src="images/bonus3.png" alt="DJ Панда" class="rounded-lg shadow-lg gallery-img"><p class="text-center text-sm mt-2 text-gray-400">🎧 DJ Панда</p></div>
+      <div><img src="images/bonus4.png" alt="Панда с донатом" class="rounded-lg shadow-lg gallery-img"><p class="text-center text-sm mt-2 text-gray-400">🍩 Панда с донатом</p></div>
+      <div><img src="images/bonus5.png" alt="Панда в ванной" class="rounded-lg shadow-lg gallery-img"><p class="text-center text-sm mt-2 text-gray-400">🛁 Панда в ванной</p></div>
     </div>
   </div>
 </section>
 
-<!-- Services -->
 <section class="max-w-4xl mx-auto px-6 py-10">
   <h2 class="text-2xl mb-4 highlight">✨ Что я делаю</h2>
   <ul class="list-disc list-inside text-gray-300 space-y-2">
@@ -142,7 +121,6 @@
   </ul>
 </section>
 
-<!-- Reviews -->
 <section class="bg-gray-900 py-10 px-6">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl mb-4 highlight">Отзывы</h2>
@@ -152,7 +130,6 @@
   </div>
 </section>
 
-<!-- Contacts -->
 <section class="py-10 px-6 text-center">
   <h2 class="text-2xl mb-4 highlight">📬 Контакты</h2>
   <p class="text-gray-300 mb-4">Связаться со мной можно через соцсети или по email:</p>
@@ -164,7 +141,6 @@
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-black text-center py-6 text-gray-500 text-sm">
   © 2025 by IrinaCreaAi. Все права защищены.
 </footer>
