@@ -59,20 +59,14 @@
     </div>
 
  <!-- Коллекция 2 -->
-<div class="mb-10">
-  <div onclick="toggleCollection('summer')" class="cursor-pointer group">
-    <img src="images/pandas.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
-    <h3 class="text-xl mt-3">Panda’s Summer Vacation</h3>
-    <p class="text-gray-400 text-sm">25 милых нейропанд на отдыхе</p>
-  </div>
-  <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden">
-    <script>
-      for (let i = 1; i <= 25; i++) {
-        document.write(`<img src="images/panda${i}.png" alt="Vacation Panda ${i}" class="rounded-lg gallery-img">`);
-      }
-    </script>
-  </div>
-</div>
+ <div class="mb-10">
+      <div onclick="toggleCollection('summer')" class="cursor-pointer group">
+        <img src="images/pandas.png" alt="Panda's Summer Vacation" class="rounded-xl w-full shadow-lg group-hover:opacity-80 transition">
+        <h3 class="text-xl mt-3">Panda’s Summer Vacation</h3>
+        <p class="text-gray-400 text-sm">25 милых нейропанд на отдыхе</p>
+      </div>
+      <div id="summer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 hidden"></div>
+    </div>
     
     <!-- Заготовка -->
     <div class="mb-10 opacity-50 pointer-events-none">
